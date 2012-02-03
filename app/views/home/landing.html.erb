@@ -1,0 +1,36 @@
+<script>
+
+	$(document).ready(function() {
+		
+		//clear email input
+		$("#beta_signup_input").click(function() {
+			$(this).val("");
+		}) 
+		
+	});
+
+</script>
+<div class="wrap">
+	<div id="content">
+		<div id="logo">
+			<a class="transform" href="#"> </a>
+			<p>Coming Soon...</p>
+		</div> <!--END logo-->
+		<div class="headline">
+			<p>Life is an art. Paint your dreams.</p>
+		</div>
+		<div class="sub_headline">
+			<p>Share.Discover.Collaborate.</p>
+		</div>
+		<div id="beta_signup">
+			<form method="post" action="/beta_signup">
+				<div class="left">
+					<input id="beta_signup_input" name="beta_signup_input" type="text" value="Enter your email to join the beta!">
+				</div>
+				<div class="right submit">	
+					<input class="submit_button" type="submit" value="Go"/>
+				</div>
+			</form>
+		</div> <!--END beta_signup-->
+	</div> <!--END Content-->
+</div> <!--END wrap-->
