@@ -4,18 +4,19 @@
 		//clear email input
 		$("#beta_signup_input").click(function() {
 			$(this).val("");
-			$("#beta_signup_input").css("color", "#839599");
 		})
 		
 		//Display Beta Signup success/error message
 		$("#beta_signup_form")
 			.bind("ajax:success", function(e, data, status, xhr){
+				$("#beta_signup_input").css("border", "none");
 				$("#notification p").text("Thank You for your interest!").css("color", "green");
-
 			})
 			.bind("ajax:error", function(e, xhr, status, error){
-				$("#beta_signup_input").css("color", "red");
-				$("#notification p").text("Oops! Seems like the email is incorrect.").css("color", "red");
+				$("#beta_signup_input").css("border", "solid");
+				$("#beta_signup_input").css("border-width", "1px");
+				$("#beta_signup_input").css("border-color", "rgba(255, 0, 0, .5)");
+				$("#notification p").text("Oops! Seems like the email is incorrect.").css("color", "rgba(255, 0, 0, .75)");
 			});
 		
 	});

@@ -65,6 +65,12 @@
 	height: 30px;
 }
 
+.error_input {
+	border-color: red;
+	border: solid;
+	border-size: 1px;
+}
+
 .transform {
 	transform:rotate(-9deg);
 	-ms-transform:rotate(-9deg); /* Internet Explorer */

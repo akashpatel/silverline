@@ -1,7 +1,7 @@
 ---
-bankgthd.ttf: bankgthd-1faabebae988807c14d73a81d3960965.ttf
-landing_bg1.png: landing_bg1-2a0d39a8e5994eeda1549e129dfc7430.png
-landing_bg_gradient.png: landing_bg_gradient-71373937ed7ee76a2e41215014e2e0da.png
-landing_logo.png: landing_logo-ce01f61d5a01ce4697a10ef69a7b8654.png
-application.js: application-3d7becb183603113a585f12ceec188fa.js
-application.css: application-3342eeee0905e3a6e831a64426856b6c.css
+bankgthd.ttf: bankgthd.ttf
+landing_bg.png: landing_bg.png
+landing_bg_gradient.png: landing_bg_gradient.png
+landing_logo.png: landing_logo.png
+application.js: application.js
+application.css: application.css
