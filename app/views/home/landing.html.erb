@@ -1,11 +1,22 @@
 <script>
 
 	$(document).ready(function() {
-		
 		//clear email input
 		$("#beta_signup_input").click(function() {
 			$(this).val("");
-		}) 
+			$("#beta_signup_input").css("color", "#839599");
+		})
+		
+		//Display Beta Signup success/error message
+		$("#beta_signup_form")
+			.bind("ajax:success", function(e, data, status, xhr){
+				$("#notification p").text("Thank You for your interest!").css("color", "green");
+
+			})
+			.bind("ajax:error", function(e, xhr, status, error){
+				$("#beta_signup_input").css("color", "red");
+				$("#notification p").text("Oops! Seems like the email is incorrect.").css("color", "red");
+			});
 		
 	});
 
@@ -23,7 +34,7 @@
 			<p>Share.Discover.Collaborate.</p>
 		</div>
 		<div id="beta_signup">
-			<form method="post" action="/beta_signup">
+			<form id="beta_signup_form" method="post" action="/beta_signup" data-remote="true">
 				<div class="left">
 					<input id="beta_signup_input" name="beta_signup_input" type="text" value="Enter your email to join the beta!">
 				</div>
@@ -32,5 +43,8 @@
 				</div>
 			</form>
 		</div> <!--END beta_signup-->
+		<div id="notification">
+			<p></p>
+		</div>
 	</div> <!--END Content-->
 </div> <!--END wrap-->
