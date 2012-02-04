@@ -1,12 +1,14 @@
 html { 
-	background: url('landing_bg.png');
+	background-color: rgba(0,30,35,0.99);
+	# background-color: #001e23;
+	
 }
 
 body{
     margin:0; padding:0;
 	font-family: bank_gothic; color:#809296;
     color: #839599;
-	background:url('landing_bg_gradient.png') no-repeat center top;
+ 	background:url('landing_bg.jpg') no-repeat center top;
 	min-height: 800px;
 	height: 100%;
 }
