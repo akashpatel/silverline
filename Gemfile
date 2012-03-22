@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
+gem 'devise'
+gem 'koala' # 1.0
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'jquery-rails'
+
 
 group :development, :test do
 	gem 'sqlite3'
@@ -24,8 +30,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
