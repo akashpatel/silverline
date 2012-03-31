@@ -1,0 +1,52 @@
+html { 
+	# background-color: rgba(0,30,35,0.99);
+	# background-color: #001e23;
+	
+}
+
+body{
+    margin:0; padding:0;
+	font-family: bank_gothic; 
+	color:#809296;
+    background: -webkit-radial-gradient(50% 50%,circle cover, #555, #2D2D2D 100%) fixed;
+	min-height: 800px;
+	height: 100%;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #4E6881;
+}
+
+a:hover {
+	color: #7FAAD4;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.submit_button {
+	background: none;
+	border: none;
+	font-family: bank_gothic;
+	font-size: 26px;
+	color: #4E6881;
+	cursor: pointer;
+}
+
+.submit_button:mouseover {
+	color: #fff;
+}
+
+@font-face {
+	font-family: bank_gothic;
+	src: url('bankgthd.ttf');
+}

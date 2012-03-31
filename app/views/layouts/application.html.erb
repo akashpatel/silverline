@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IkonBlvd</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div class="clearfix" id="pageHead" role="banner">
+				<h1 id="pageLogo">
+					ikon.blvd
+				</h1>
+				<div class="clearfix" id="headNav">
+					<div class="left">
+					</div>
+					<div class="right">
+						<ul id="pageNav" role="navigation">
+							<% if user_signed_in? %>
+				            <li><%= link_to "Sign out", destroy_user_session_path %></li>
+							<li><%= current_user.email %></li>
+				            <% end %>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	    <div id="content">
+			<%= yield %>
+		</div>
+	</div>
+
+</body>
+</html>

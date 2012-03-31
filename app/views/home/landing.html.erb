@@ -1,0 +1,51 @@
+<script>
+
+	$(document).ready(function() {
+		//clear email input
+		$("#beta_signup_input").click(function() {
+			$(this).val("");
+		})
+		
+		//Display Beta Signup success/error message
+		$("#beta_signup_form")
+			.bind("ajax:success", function(e, data, status, xhr){
+				$("#beta_signup_input").css("border", "none");
+				$("#notification p").text("Thank You for your interest!").css("color", "green");
+			})
+			.bind("ajax:error", function(e, xhr, status, error){
+				$("#beta_signup_input").css("border", "solid");
+				$("#beta_signup_input").css("border-width", "1px");
+				$("#beta_signup_input").css("border-color", "rgba(255, 0, 0, .5)");
+				$("#notification p").text("Oops! Seems like the email is incorrect.").css("color", "rgba(255, 0, 0, .75)");
+			});
+		
+	});
+
+</script>
+<div class="wrap">
+	<div id="landing_content">
+		<div id="logo">
+			<a class="transform" href="#"> </a>
+			<p>Coming Soon...</p>
+		</div> <!--END logo-->
+		<div class="headline">
+			<p>Life is an art. Paint your dreams.</p>
+		</div>
+		<div class="sub_headline">
+			<p>Share. Discover. Collaborate. Build.</p>
+		</div>
+		<div id="beta_signup">
+			<form id="beta_signup_form" method="post" action="/beta_signup" data-remote="true">
+				<div class="left">
+					<input id="beta_signup_input" name="beta_signup_input" type="text" value="Enter your email to join the beta!">
+				</div>
+				<div class="right submit">	
+					<input class="submit_button" type="submit" value="Go"/>
+				</div>
+			</form>
+		</div> <!--END beta_signup-->
+		<div id="notification">
+			<p></p>
+		</div>
+	</div> <!--END Content-->
+</div> <!--END wrap-->
