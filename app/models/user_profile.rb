@@ -7,4 +7,8 @@ class UserProfile < ActiveRecord::Base
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def image_path
+    self[:image_path].gsub("type=square","type=large")
+  end
 end

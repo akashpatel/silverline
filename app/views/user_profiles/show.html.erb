@@ -6,9 +6,16 @@
 
 </script>
 
-<div>
-  <img src="<%=current_user.user_profile.image_path %>">
-  <p>
-    <h3><%=current_user.user_profile.full_name%></h3>
-  </p>
+<div id="profile_header">
+  <div class="profileContent">
+    <img class="profileImage" src="<%=current_user.user_profile.image_path %>">
+    <div id="profile_info">
+        <h1><%=current_user.user_profile.full_name%></h1>
+        <p>//Enter your tagline</p>
+        <p>Lives in</p>
+        <p>From</p>
+        <p>Motivated by </p>
+        <p>Passionate about</p>
+    </div>
+  </div>
 </div>
