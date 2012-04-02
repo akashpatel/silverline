@@ -1,4 +1,4 @@
-== Silverline aka IkonBlvd ==
+== Silverline aka IkonBlvd
 *starter_proj* branch - This is a base project that contains facebook login integration.  It will also build a basic user profile with a profile header that contains a pic and area to add basic user info.  You can create a brandnew project using this bracnh exteremily quickly since authetication, fb support, and user profile support is already included.
 
-== See Roadmap wiki for features and iteration ==
+== See Roadmap wiki for features and iteration planning.
