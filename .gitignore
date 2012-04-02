@@ -17,3 +17,4 @@ config/.DS_Store
 db/.DS_Store
 *.DS_Store
 /public/assets/*
+.idea/
