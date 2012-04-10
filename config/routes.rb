@@ -13,5 +13,11 @@ IkonBlvd::Application.routes.draw do
   resources :user_profiles
   resources :authentications
   
+  resources :user_assets, :only => :new do
+    collection do
+      post 'upload'
+    end
+  end
+  
   root :to => 'home#landing'
 end
