@@ -12,6 +12,10 @@
     box-shadow: 0 1px 3px rgba(34,25,25,0.5);
     -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.5);
     -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
     height: 100%;
 }
 
@@ -30,6 +34,27 @@
     max-width: 160px;
     overflow: hidden;
     margin: 8px;
+}
+
+.profileNavBar {
+	font-size: 13px;
+    margin: 10px auto;
+    width:120px;
+    height: 50px;
+	padding: 20px;
+}
+
+.assetBox {
+	margin: 5px;
+	padding: 1px;
+	background: #D8D5D2;
+/*	background: rgba(0, 0, 0, 0.6);*/
+	font-size: 11px;
+	line-height: 1.5em;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 

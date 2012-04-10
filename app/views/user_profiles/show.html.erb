@@ -1,9 +1,15 @@
 
 <script>
-  $(function (){
-  	
-  });
-
+	$(function(){
+		var $userAssetsContainer = $('#user_assets_container');
+		$userAssetsContainer.imagesLoaded(function(){
+			$userAssetsContainer.masonry({
+				itemSelector: '.assetBox',
+				isAnimated: true,
+				isFitWidth: false
+			});
+		});
+	});
 </script>
 
 <div id="profile_header">
@@ -20,15 +26,18 @@
   </div>
 </div>
 
-<div id="profile_navbar">
+<div class="profileNavBar">
 	<%= form_for :asset, :url => upload_user_assets_path, :html => {:multipart => true} do |f| %>
-		<%= f.file_field :image %> </br>
-		<%= f.submit%>
+		<%= f.file_field :image %> </br> </br>
+		<%= f.submit :class => "button"%>
 	<% end %>
 </div>
+</br></br>
 
-<div id="users_assets_container">
+<div id="user_assets_container">
 	<% current_user.user_profile.user_assets.each do |asset|%>
-		<%= image_tag asset.image.url(:pinterest)%>
+		<div class="assetBox">
+			<%= image_tag asset.image.url(:pinterest)%>
+		</div>
 	<% end %>
 </div>

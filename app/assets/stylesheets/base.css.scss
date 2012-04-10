@@ -42,6 +42,24 @@ a:hover {
 	cursor: pointer;
 }
 
+.button {
+	display: block;
+	padding: 10px;
+	border: 1px;
+	background: whiteSmoke;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "Times New Roman";
+	-webkit-border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	text-align: center;
+	width: 115px;
+	height: 38px;
+	border-style: solid;
+	border-color: #CCC;
+	cursor: pointer;
+}
+
 .submit_button:mouseover {
 	color: #fff;
 }
