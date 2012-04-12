@@ -1,12 +1,13 @@
 IkonBlvd::Application.routes.draw do
+  #landing page routes
   match "beta_signup" =>  "home#beta_signup"
   
-  #temp index page hack
-  match "silverline" => "home#index"
+  match "silverline" => "home#login"
+  match "index" => "home#index"
   
   #devise
   match '/auth/:provider/callback' => 'authentications#create'
-  match '/auth/failure' => "home#index"
+  match '/auth/failure' => "home#login"
   
   devise_for :users
 

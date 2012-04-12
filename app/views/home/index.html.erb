@@ -1,6 +1,21 @@
+<script>
+	$(function(){
+		var $userAssetsContainer = $('#user_assets_container');
+		$userAssetsContainer.imagesLoaded(function(){
+			$userAssetsContainer.masonry({
+				itemSelector: '.assetBox',
+				isAnimated: true,
+				isFitWidth: true
+			});
+		});
+	});
+</script>
 
-<div id="login_container">
-	<a href="/auth/facebook" class="auth_provider">
-    <%= image_tag "/assets/fb_login_button.png", :alt => "Facebook" %>
-  </a>
-</div>	
+
+<div id="user_assets_container">
+	<% @assets.each do |asset|%>
+		<div class="assetBox">
+			<%= image_tag asset.image.url(:pinterest)%>
+		</div>
+	<% end %>
+</div>

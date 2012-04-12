@@ -1,8 +1,15 @@
 class HomeController < ApplicationController
-  def index
-    redirect_to user_profile_path(current_user.user_profile) if current_user
+  def login
+    redirect_to index_path if current_user
   end
   
+  def index
+    @assets = UserAsset.find(:all)
+    
+  end
+  
+  
+  #### Landing page related calls ####
   def landing
     #when removing landing page, remove both home/landing.html.erb and layout/landing.html.erb
     render :layout => 'landing'

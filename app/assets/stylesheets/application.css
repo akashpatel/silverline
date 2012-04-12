@@ -26,7 +26,6 @@
 
 #pageLogo {
 	float: left;
-	margin-left: -6px;
 	z-index: 5;
 }
 
@@ -34,14 +33,25 @@
 	margin-left: 180px;
 }
 
+.header_image {
+	width: 45px;
+	height: 45px;
+}
+
 #pageNav {
-	padding-top: 6px;
 	list-style-type: none;
 	height: 31px;
 }
 
+#pageNav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	border-right: 1px solid #809296;
+}
+
 #content {
-	margin: 15px 35px;
+	margin: 35px 35px;
 }
 
 .clearfix {

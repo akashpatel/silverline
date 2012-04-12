@@ -15,7 +15,7 @@ class AuthenticationsController < ApplicationController
         sign_in(:user, user)
       end
     end
-    redirect_to user_profile_path(current_user.user_profile)
+    redirect_to index_path
   end
 
 #  Not used at the moment.
