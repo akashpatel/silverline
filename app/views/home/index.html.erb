@@ -1,21 +1,23 @@
-<script>
-	$(function(){
-		var $userAssetsContainer = $('#user_assets_container');
-		$userAssetsContainer.imagesLoaded(function(){
-			$userAssetsContainer.masonry({
-				itemSelector: '.assetBox',
-				isAnimated: true,
-				isFitWidth: true
-			});
+<% content_for :ready do %>
+	$('.assetBox a').lightBox();
+	
+	var $userAssetsContainer = $('#user_assets_container');
+	$userAssetsContainer.imagesLoaded(function(){
+		$userAssetsContainer.masonry({
+			itemSelector: '.assetBox',
+			isAnimated: true,
+			isFitWidth: true
 		});
 	});
-</script>
+<% end %>
 
 
 <div id="user_assets_container">
 	<% @assets.each do |asset|%>
 		<div class="assetBox">
-			<%= image_tag asset.image.url(:pinterest)%>
+			<a href="<%= asset.image.url(:pinterest_lg) %>">
+				<%= image_tag asset.image.url(:pinterest)%>
+			</a>
 		</div>
 	<% end %>
 </div>
