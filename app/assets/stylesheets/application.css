@@ -33,9 +33,16 @@
 	margin-left: 180px;
 }
 
+#headNavRight {
+	margin-top: 15px;
+}
 .header_image {
-	width: 45px;
-	height: 45px;
+	width: 34px;
+	height: 34px;
+	margin-top: 4px;
+	border: solid 1px #fff;
+	border-bottom-width: 4px;
+	
 }
 
 #pageNav {

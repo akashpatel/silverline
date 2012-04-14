@@ -23,12 +23,14 @@
 				<div class="clearfix" id="headNav">
 					<div class="left">
 					</div>
-					<div class="right">
-						<ul id="pageNav" role="navigation">
+					<div id="headNavRight" class="right">
+						<div class = "left">
 							<% if user_signed_in? %>
-							<li><a href="<%=user_profile_path(current_user.user_profile)%>">
-								  <img class="header_image" src="<%=current_user.user_profile.image_path%>"/></li>
-								</a>	
+							<a href="<%=user_profile_path(current_user.user_profile)%>">
+								  <img class="header_image" src="<%=current_user.user_profile.image_path%>"/>
+								</a>
+						</div>
+						<ul id="pageNav" role="navigation">
 							<li><%= current_user.user_profile.first_name + "#{ }" + current_user.user_profile.last_name %></li>
 							<li><%= link_to "Sign out", destroy_user_session_path %></li>
 				            <% end %>
