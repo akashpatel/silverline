@@ -6,7 +6,7 @@ gem 'koala' # 1.0
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'jquery-rails'
-gem "paperclip", "~> 3.0"
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 
 group :development, :test do
