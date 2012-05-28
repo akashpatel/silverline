@@ -1,0 +1,6 @@
+<div class="input-append">
+<%= form_for :user_dream, :url => user_dreams_path do |f| %>
+    <%= f.text_field :dream, :placeholder => "Share your dream", :class => "span5" %>
+    <%= f.submit :class => "btn btn-info", :value => "Dream It " %>
+<% end %>
+</div>

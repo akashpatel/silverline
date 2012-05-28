@@ -14,26 +14,25 @@
 
 <div id="profile_header">
   <div id="profile_content" class="profileHeaderContainer">
-    <img class="profileImage" src="<%=current_user.user_profile.image_path %>">
-          <div id="profile_info">
-              <h1><%=current_user.user_profile.full_name%></h1>
-              <p>//Enter your tagline</p>
-              <p>Lives in</p>
-              <p>From</p>
-              <p>Motivated by </p>
-              <p>Passionate about</p>
-          </div>
-  </div>
-  <div id="profile_nav" class="profileHeaderContainer">
-	<div>
-		<%= form_for :asset, :url => upload_user_assets_path, :html => {:multipart => true} do |f| %>
-		  <%= f.file_field :image%>
-		  <%= f.submit :class => "button"%>
-		<% end %>
-	  <button id="add_words" class="button">Words</button>
-	</div>
+      <img class="profileImage" src="<%=current_user.user_profile.image_path %>"/>
+      <div id="profile_info">
+          <h1><%=current_user.user_profile.full_name%></h1>
+          <p>//Enter your tagline</p>
+          <p>Lives in</p>
+          <p>From</p>
+          <p>Motivated by </p>
+          <p>Passionate about</p>
+      </div>
   </div>
 </div>
+
+</br></br>
+
+<div id="create_profile_content">
+    <%= render "shared/create_dream_form" %>
+    <%= render "shared/create_asset_form" %>
+</div>
+
 </br></br>
 
 <div id="user_assets_container">

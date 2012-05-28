@@ -1,0 +1,7 @@
+<div class="input-append">
+<%= form_for :asset, :url => upload_user_assets_path, :html => {:multipart => true} do |f| %>
+
+    <%= f.file_field :image, :class => "span5" %>
+    <%= f.submit :class => "btn btn-info", :value => "Upload It" %>
+<% end %>
+</div>

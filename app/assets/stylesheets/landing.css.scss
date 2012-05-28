@@ -4,6 +4,10 @@ body.landing{
 	background-color: rgba(0,30,35,0.99);
 }
 
+#landing_content p {
+  font-family: bank_gothic;
+}
+
 .wrap { 
 	position: relative; 
 	z-index: 1; 
@@ -31,11 +35,15 @@ body.landing{
 }
 
 .headline {
-	font-size: 25px;
-	margin: 100px auto -10px;
+    margin: 100px auto 10px;
 	color: #7FAAD4;
 }
-.sub_headline {
+
+.headline p {
+  font-size: 25px;
+}
+
+.sub_headline p {
 	font-size: 19px;
 	color: #4E6881;
 }
@@ -87,7 +95,7 @@ body.landing{
 
 .left_arrow {
 	width: 46px;
-	height: 31px; 
+	height: 31px;
 	text-indent: -9999px;
     background:url('arrow_left.png') center no-repeat scroll transparent;
 }
