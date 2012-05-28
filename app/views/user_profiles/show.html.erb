@@ -35,7 +35,7 @@
 
 </br></br>
 
-<div id="user_assets_container">
+<div id="user_assets_container" class="center">
 	<% current_user.user_profile.user_assets.each do |asset|%>
 		<div class="assetBox">
 			<a href="<%= asset.image.url(:pinterest_lg) %>">

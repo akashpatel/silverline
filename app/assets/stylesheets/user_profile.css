@@ -52,13 +52,8 @@
 	margin: 10px;
 }​
 
-input[type="file"]{
-    opacity:0.1;
-    filter:alpha(opacity=10);
-}​
-
 #user_assets_container {
-	margin: 0 auto;
+	margin: auto auto;
 }
 
 .assetBox {
