@@ -79,6 +79,12 @@
     color: #bbb;
 }
 
+.shadow{
+	box-shadow: 4px 4px 8px #818181;
+	-webkit-box-shadow: 4px 4px 8px #818181;
+	-moz-box-shadow: 4px 4px 8px #818181;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=4, offY=4, positive=true);
+}
 #create_profile_content {
     width: 465px;
     height: 100%;
