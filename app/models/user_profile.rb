@@ -4,6 +4,7 @@ class UserProfile < ActiveRecord::Base
 
   belongs_to  :user
   has_many    :user_assets
+  has_many    :user_dreams
 
   def full_name
     "#{first_name} #{last_name}"

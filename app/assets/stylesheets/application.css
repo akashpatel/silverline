@@ -13,7 +13,7 @@
 */
 
 #header {
-	height: 70px;
+	height: 45px;
 	width: 100%;
 	min-width: 981px;
 	border-bottom: 1px solid;
@@ -37,11 +37,9 @@
 
 }
 .header_image {
-	width: 34px;
-	height: 34px;
-	margin-top: 4px;
+	width: 28px;
+	height: 28px;
 	border: solid 1px #fff;
-	border-bottom-width: 4px;
 	
 }
 

@@ -58,15 +58,25 @@
 
 .assetBox {
 	margin: 7px;
-	padding: 2px;
+	padding: 1px;
 	background: #D8D5D2;
 /*	background: rgba(0, 0, 0, 0.6);*/
 	font-size: 11px;
 	line-height: 1.5em;
 	float: left;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	/*-webkit-border-radius: 7px;*/
+	/*-moz-border-radius: 7px;*/
+	/*border-radius: 7px;*/
+}
+
+.assetBox p {
+    width: 172px;
+    padding: 10px;
+    margin: 0 0;
+    font-family: "Times New Roman";
+    font-size: 1.5em;
+    background-color: #000;
+    color: #bbb;
 }
 
 #create_profile_content {

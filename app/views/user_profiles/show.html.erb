@@ -36,11 +36,17 @@
 </br></br>
 
 <div id="user_assets_container" class="center">
-	<% current_user.user_profile.user_assets.each do |asset|%>
+	<% @user_assets.each do |asset|%>
 		<div class="assetBox">
 			<a href="<%= asset.image.url(:pinterest_lg) %>">
 				<%= image_tag asset.image.url(:pinterest)%>
 			</a>
 		</div>
 	<% end %>
+
+    <% @user_dreams.each do |dream| %>
+        <div class="assetBox">
+          <p><%= dream.dream %></p>
+        </div>
+    <% end %>
 </div>
