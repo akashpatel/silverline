@@ -75,8 +75,8 @@
     margin: 0 0;
     font-family: "Times New Roman";
     font-size: 1.5em;
-    background-color: #000;
-    color: #bbb;
+    background-color: rgba(194, 194, 194, 0.26);
+    color: #2D333A;
 }
 
 #create_profile_content {
