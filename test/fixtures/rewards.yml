@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  qr_code: 1
+  reward_value: 1
+  reward_redeemed: false
+
+two:
+  qr_code: 1
+  reward_value: 1
+  reward_redeemed: false

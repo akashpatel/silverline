@@ -12,6 +12,8 @@ IkonBlvd::Application.routes.draw do
 
   resources :user_profiles
   resources :authentications
+  resources :rewards
+  match '/reward_by_qrcode/:id' => 'rewards#get_reward_by_qrcode'
   
   root :to => 'home#landing'
 end

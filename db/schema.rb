@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120204000322) do
+ActiveRecord::Schema.define(:version => 20120611031252) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(:version => 20120204000322) do
     t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "rewards", :force => true do |t|
+    t.string   "qr_code"
+    t.decimal  "reward_value"
+    t.boolean  "reward_redeemed"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "user_profiles", :force => true do |t|

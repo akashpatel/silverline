@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Qr code:</b>
+  <%= @reward.qr_code %>
+</p>
+
+<p>
+  <b>Reward value:</b>
+  <%= @reward.reward_value %>
+</p>
+
+<p>
+  <b>Reward redeemed:</b>
+  <%= @reward.reward_redeemed %>
+</p>
+
+
+<%= link_to 'Edit', edit_reward_path(@reward) %> |
+<%= link_to 'Back', rewards_path %>
