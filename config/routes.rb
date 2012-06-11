@@ -2,7 +2,7 @@ IkonBlvd::Application.routes.draw do
   match "beta_signup" =>  "home#beta_signup"
   
   #temp index page hack
-  match "silverline" => "home#index"
+  match "flaunt" => "home#index"
   
   #devise
   match '/auth/:provider/callback' => 'authentications#create'
