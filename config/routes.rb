@@ -1,6 +1,7 @@
 IkonBlvd::Application.routes.draw do
   #landing page routes
   match "beta_signup" =>  "home#beta_signup"
+  match "health_check" => "home#health_check"
   
   match "silverline" => "home#login"
   match "index" => "home#index"

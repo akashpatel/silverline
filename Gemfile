@@ -7,6 +7,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'jquery-rails'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'newrelic_rpm'
 
 
 group :development, :test do

@@ -9,6 +9,10 @@ class HomeController < ApplicationController
     
   end
   
+  def health_check
+    render :text => 'pass'
+  end
+  
   
   #### Landing page related calls ####
   def landing
