@@ -1,0 +1,70 @@
+// Place all the styles related to the dishes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main_container {
+  margin-top: 70px;
+  width: 1055px;
+  margin: 40px auto auto auto;
+  text-align: center;
+  height: 614px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 0px 1px inset, rgba(6, 54, 95, 0.047) -1px 0px 0px 0px inset, rgba(255, 255, 255, 0.69) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.31) 1px 0px 3px 0px;
+  -moz-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
+  -ms-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
+  -o-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.34), inset -1px 0 0 0 rgba(31, 32, 32, 0.15), inset 0 0 0 2px rgba(255, 255, 255, 0.69), 1px 0 3px rgba(0, 0, 0, 0.31);
+}
+
+#main_container_left {
+  width: 594px;
+  height: 594px;
+  margin: 0 -1px 0 0;
+}
+
+#main_container_right {
+  width: 442px;
+  position: relative;
+  float: left;
+  height: inherit;
+
+#main_container_right_top {
+    height: 80px;
+    background-image: -moz-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
+    background-image: -ms-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(14, 104, 10, 0.66)), to(rgba(255, 255, 255, 0.43)));
+    background-image: -webkit-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
+    background-image: -o-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
+    background-image: linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
+    background-repeat: repeat-x;
+  }
+
+  #main_container_right_bottom{
+
+  }
+}
+
+
+#main_content {
+  border: 1px #000;
+  width: 310px;
+  min-height: 200px;
+  color: #000;
+  background: #696969;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#main_content h3 {
+  font-size: 1.7em;
+}
+
+#main_content p {
+  text-align: left;
+  margin-left: 15px;
+}
+
+#main_content a {
+  color: white;
+  ;
+}

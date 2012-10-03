@@ -7,4 +7,8 @@ class QuotesController < ApplicationController
 
     redirect_to user_profile_path(current_user.user_profile)
   end
+  
+  def show
+    @quote = Quote.find(params[:id])
+  end
 end

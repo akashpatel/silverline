@@ -1,6 +1,4 @@
 <% content_for :ready do %>
-	$('.assetBox a').lightBox();
-	
 	var $userAssetsContainer = $('#user_assets_container');
 	$userAssetsContainer.imagesLoaded(function(){
 		$userAssetsContainer.masonry({
@@ -9,17 +7,13 @@
 			isFitWidth: true
 		});
 	});
-
-    $('.assetBox').mouseover(function() {
-
-    });
 <% end %>
 
 
 <div id="user_assets_container" class="center">
 	<% @quotes.each do |quote|%>
 		<div class="assetBox shadow">
-			<a href="#">
+			<a href="<%= quote_path(quote) %>">
 				<div class="assetBoxTopDiv">
 					<blockquote><%= quote.description %></blockquote>
 				</div>

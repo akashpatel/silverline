@@ -15,7 +15,7 @@ IkonBlvd::Application.routes.draw do
   resources :user_profiles
   resources :authentications
   resources :user_dreams, :only => :create
-  resources :quotes, :only => :create
+  resources :quotes, :only => [:create, :show]
   
   resources :user_assets, :only => :new do
     collection do
