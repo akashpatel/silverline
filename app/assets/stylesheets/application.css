@@ -19,23 +19,6 @@
 	border-bottom: 1px solid;
 }
 
-#pageHead {
-	width: auto;
-	margin: 15px 35px;
-}
-
-#pageLogo {
-	float: left;
-	z-index: 5;
-}
-
-#headNav {
-	margin-left: 180px;
-}
-
-#headNavRight {
-
-}
 .header_image {
 	width: 28px;
 	height: 28px;
@@ -43,20 +26,8 @@
 	
 }
 
-#pageNav {
-	list-style-type: none;
-	height: 31px;
-}
-
-#pageNav li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 5px;
-	border-right: 1px solid #809296;
-}
-
 #content {
-	margin: 35px 35px;
+	margin: 70px 35px 35px 35px;
 }
 
 .clearfix {

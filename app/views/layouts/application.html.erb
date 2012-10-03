@@ -15,30 +15,23 @@
 
 <body>
 	<div id="container">
-		<div id="header">
-			<div class="clearfix" id="pageHead" role="banner">
-				<h1 id="pageLogo">
-					<a href="<%=index_path%>">ikon.blvd</a>
-				</h1>
-				<div class="clearfix" id="headNav">
-					<div class="left">
-					</div>
-					<div id="headNavRight" class="right">
-						<div class = "left">
-							<% if user_signed_in? %>
-							<a href="<%=user_profile_path(current_user.user_profile)%>">
-								  <img class="header_image" src="<%=current_user.user_profile.image_path%>"/>
-								</a>
-						</div>
-						<ul id="pageNav" role="navigation">
-							<li><%= current_user.user_profile.first_name + "#{ }" + current_user.user_profile.last_name %></li>
+		<div class="navbar navbar-fixed-top">
+		    <div class="navbar-inner">
+		      <div class="container">
+		        <a class="brand" href="/index">viadreams</a>
+		        <div class="container nav-collapse">
+		          	<ul class="nav pull-right">
+						<% if user_signed_in? %>
+							<li><%= link_to current_user.user_profile.first_name + "#{ }" + current_user.user_profile.last_name, user_profile_path(current_user.user_profile) %></li>
 							<li><%= link_to "Sign out", destroy_user_session_path %></li>
-				            <% end %>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+						<% end %>
+					</ul>
+		        </div>
+		        <!--/.nav-collapse -->
+		      </div>
+		    </div>
+		  </div>
+	
 	    <div id="content">
 			<%= yield %>
 		</div>
