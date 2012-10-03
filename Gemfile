@@ -8,6 +8,7 @@ gem 'omniauth-facebook'
 gem 'jquery-rails'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'newrelic_rpm'
+gem 'acts-as-taggable-on', '~> 2.3.1'
 
 
 group :development, :test do
