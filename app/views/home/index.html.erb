@@ -18,15 +18,15 @@
 
 <div id="user_assets_container" class="center">
 	<% @quotes.each do |quote|%>
-		<a href="#">
-			<div class="assetBox shadow">
+		<div class="assetBox shadow">
+			<a href="#">
 				<div class="assetBoxTopDiv">
 					<blockquote><%= quote.description %></blockquote>
 				</div>
-				<div class="assetBoxBottomDiv">
-					<p><%= quote.author_name %>
-				</div>
+			</a>
+			<div class="assetBoxBottomDiv">
+				<p><%= quote.author_name %></p>
 			</div>
-		</a>
+		</div>
 	<% end %>
 </div>

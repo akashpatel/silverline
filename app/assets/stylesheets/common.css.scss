@@ -14,12 +14,15 @@
 	/*-moz-border-radius: 7px;*/
 	/*border-radius: 7px;*/
 	font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+	a:hover {
+		text-decoration: none;
+	}
 }
 
 .assetBoxTopDiv {
-	height: 200px;
+	height: 220px;
     margin: 0 0;
-	padding-top: 15px;
+	padding: 12px 15px 10px 5px;
     color: #2D333A;
 	border-bottom: 1px solid grey;
 	font-size: 18px;
@@ -27,7 +30,13 @@
 
 .assetBoxBottomDiv {
 	width: inherit;
-	height: 30px;
+	height: 38px;
+	padding: 5px;
+	p {
+		font-family: bank_gothic;
+		font-size: 20px;
+		float: left;
+	}
 }
 
 .shadow{
@@ -38,15 +47,11 @@
 }
 
 blockquote {
-	font-size: 20px;
-	line-height: 21px;
+	font-size: 19px;
+	line-height: 25px;
 	background:transparent;
 	border-left:1px solid #535353;
 	margin:1.5em 10px;
 	padding:.5em 10px;
 	quotes:"\201C""\201D""\2018""\2019";
-	content:open-quote;
-}
-blockquote p {
-	 display:inline;
 }
