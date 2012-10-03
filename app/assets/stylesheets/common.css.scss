@@ -1,0 +1,58 @@
+#user_assets_container {
+	margin: auto auto;
+}
+
+.assetBox {
+	width: 272px;
+	height: 272px;
+	margin: 7px;
+	padding: 10px;
+	background: #D8D5D2;
+	line-height: 1.5em;
+	float: left;
+	/*-webkit-border-radius: 7px;*/
+	/*-moz-border-radius: 7px;*/
+	/*border-radius: 7px;*/
+	font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+}
+
+.assetBoxTopDiv {
+	height: 200px;
+    margin: 0 0;
+	padding-top: 15px;
+    font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+    font-size: 1.7em;
+    color: #2D333A;
+	border-bottom: 1px solid grey;
+}
+
+.assetBoxBottomDiv {
+	width: inherit;
+	height: 30px;
+}
+
+.shadow{
+	box-shadow: 4px 4px 8px #818181;
+	-webkit-box-shadow: 4px 4px 8px #818181;
+	-moz-box-shadow: 4px 4px 8px #818181;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=4, offY=4, positive=true);
+}
+
+blockquote {
+  background:transparent;
+  border-left:2px solid #535353;
+  margin:1.5em 10px;
+  padding:.5em 10px;
+  quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color:#969696;
+  content:open-quote;
+  font-size:3em;
+  line-height:.1em;
+  margin-right:.25em;
+  vertical-align:-.4em;
+}
+blockquote p {
+  display:inline;
+}

@@ -4,8 +4,9 @@ class HomeController < ApplicationController
   end
   
   def index
-    @user_assets = UserAsset.find(:all)
-    @user_dreams = UserDream.find(:all)
+    # @user_assets = UserAsset.find(:all)
+    # @user_dreams = UserDream.find(:all)
+    @quotes = Quote.all
     
   end
   
