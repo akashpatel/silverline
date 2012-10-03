@@ -1,0 +1,9 @@
+<div class="input-append">
+<%= form_for :quote, :url => quotes_path do |f| %>
+    <%= f.text_field :description, :placeholder => "Share a quote", :class => "span5" %>
+	<%= f.text_field :author_name, :placeholder => "Author name", :class => "span5" %>
+	<%= f.text_field :tag_list, :placeholder => "Add tags (comma separated)", :class => "span5" %>
+	</br></br>
+	<%= f.submit :class => "btn btn-info btn-large", :value => "Share It " %>
+<% end %>
+</div>

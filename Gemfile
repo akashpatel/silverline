@@ -14,6 +14,8 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'ruby-debug19', :require => 'ruby-debug'
+	gem 'pry-rails'
+	gem 'pry-nav'
 	# gem 'capistrano'
 end
 
