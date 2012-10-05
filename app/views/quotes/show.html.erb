@@ -1,13 +1,23 @@
-<div id="main_container">
-  <div id="main_container_left" class="assetBox">
-    <%= @quote.tag_list %>
-  </div>
-  <div id="main_container_right">
-    <div id="main_container_right_top">
-      <h2><p>Pastrami Sandwich</p></h2>
-      <h3></h3>
-    </div>
-    <div id="main_container_right_bottom">
-    </div>
-  </div>
+<div id="quote_wrapper">
+
+	<div id="quote_tags">
+		<% @quote.tag_list.each do |tag| %>
+			<p> #<%= tag %> </p>
+		<% end %>
+	</div>
+
+	<div class="transparentBox">
+		<div id="quote_container_top">
+		   <h1><%= @quote.description %></h1>
+		</div>
+	
+		<div id="quote_container_bottom">
+			<div id="author_avatar">
+				<img src="https://lh5.googleusercontent.com/-TZEJ8uC5jmI/AAAAAAAAAAI/AAAAAAAAB-I/CYg0VkDy4IE/s48-c-k/photo.jpg">
+			</div>
+			<div id="author_name">
+				<h3> <%= @quote.author_name %> </h3>
+			</div>
+		</div>
+	</div>
 </div>

@@ -2,69 +2,69 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#main_container {
-  margin-top: 70px;
-  width: 1055px;
-  margin: 40px auto auto auto;
-  text-align: center;
-  height: 614px;
-  background-color: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 0px 1px inset, rgba(6, 54, 95, 0.047) -1px 0px 0px 0px inset, rgba(255, 255, 255, 0.69) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.31) 1px 0px 3px 0px;
-  -moz-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
-  -ms-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
-  -o-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.34), inset -1px 0 0 0 rgba(6,54,95,0.47), inset 0 0 0 2px rgba(255,255,255,0.69), 1px 0 3px rgba(0,0,0,0.31);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.34), inset -1px 0 0 0 rgba(31, 32, 32, 0.15), inset 0 0 0 2px rgba(255, 255, 255, 0.69), 1px 0 3px rgba(0, 0, 0, 0.31);
+#quote_wrapper {
+  	width: 1055px;
+	height: 525px;
+	margin: auto auto;
 }
 
-#main_container_left {
-  width: 594px;
-  height: 594px;
-  margin: 0 -1px 0 0;
+#quote_tags {
+	height: 40px;
+	color: #728510;
+	padding: 20px 10px 10px 10px;
+	margin-left: 32px;
+	text-shadow: 0 3px 0 black, 0 0 30px #090808;
+	font-weight: 500;
+	p {
+		font-size: 32px;
+		float: left;
+		padding-right: 10px;
+	}
 }
 
-#main_container_right {
-  width: 442px;
-  position: relative;
-  float: left;
-  height: inherit;
-
-#main_container_right_top {
-    height: 80px;
-    background-image: -moz-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
-    background-image: -ms-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(14, 104, 10, 0.66)), to(rgba(255, 255, 255, 0.43)));
-    background-image: -webkit-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
-    background-image: -o-linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
-    background-image: linear-gradient(top, rgba(14, 104, 10, 0.66), rgba(255, 255, 255, 0.43));
-    background-repeat: repeat-x;
-  }
-
-  #main_container_right_bottom{
-
-  }
+#quote_container_top {
+	height: 450px;
+	width: inherit;
+	h1 {
+		font-size: 45px;
+		line-height: 60px;
+		padding: 10px;
+		margin-left: 35px;
+		margin-right: 10px
+		
+	}
 }
 
-
-#main_content {
-  border: 1px #000;
-  width: 310px;
-  min-height: 200px;
-  color: #000;
-  background: #696969;
-  margin-top: 10px;
-  margin-left: 15px;
+#quote_container_bottom {
+	height: 75px;
+	border-top: 3px solid #4D4D4D;
 }
 
-#main_content h3 {
-  font-size: 1.7em;
+#author_avatar {
+	padding: 0px 15px 0px 45px;
+	float: left;
+	margin-top: 10px;
+	img {
+		width: 50px;
+		height: 50px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: 3px solid #4E4E4E;
+	}
 }
 
-#main_content p {
-  text-align: left;
-  margin-left: 15px;
+#author_name {
+	padding-top: 33px;
+	font-family: "MuseoSlab",georgia,"dejavu serif",serif;
 }
 
-#main_content a {
-  color: white;
-  ;
+.transparentBox {
+	width: inherit;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.32);
+	margin-left: auto;
+	margin-right: auto;
+	color: #E1E1E1;
 }
+
