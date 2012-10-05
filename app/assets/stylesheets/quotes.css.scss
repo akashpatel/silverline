@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #quote_wrapper {
-  	width: 1055px;
+  	width: 975px;
 	height: 525px;
 	margin: auto auto;
 }
@@ -11,52 +11,43 @@
 #quote_tags {
 	height: 40px;
 	color: #728510;
-	padding: 20px 10px 10px 10px;
-	margin-left: 32px;
+	padding: 20px 10px 10px 3px;
 	text-shadow: 0 3px 0 black, 0 0 30px #090808;
 	font-weight: 500;
 	p {
 		font-size: 32px;
 		float: left;
 		padding-right: 10px;
+		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
 	}
 }
 
 #quote_container_top {
-	height: 450px;
+	height: 375px;
 	width: inherit;
-	h1 {
+	blockquote {
 		font-size: 45px;
 		line-height: 60px;
-		padding: 10px;
+		padding: 20px;
 		margin-left: 35px;
-		margin-right: 10px
-		
+		margin-right: 20px;
+		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+		border-left: none;
 	}
 }
 
 #quote_container_bottom {
-	height: 75px;
-	border-top: 3px solid #4D4D4D;
-}
-
-#author_avatar {
-	padding: 0px 15px 0px 45px;
-	float: left;
-	margin-top: 10px;
-	img {
-		width: 50px;
-		height: 50px;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-		border: 3px solid #4E4E4E;
-	}
+	height: 150px;
 }
 
 #author_name {
-	padding-top: 33px;
-	font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+	float: right;
+	margin-right: 120px;
+	h1 {
+		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+		font-size: 32px;
+		color: #5D6B83;
+	}
 }
 
 .transparentBox {
@@ -65,6 +56,6 @@
 	background-color: rgba(0, 0, 0, 0.32);
 	margin-left: auto;
 	margin-right: auto;
-	color: #E1E1E1;
+	color: #bbb;
 }
 

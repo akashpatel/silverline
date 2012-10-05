@@ -27,7 +27,8 @@
 }
 
 #content {
-	margin: 70px 35px 35px 35px;
+	margin: 70px auto;
+	width: 975px;
 }
 
 .clearfix {

@@ -8,15 +8,12 @@
 
 	<div class="transparentBox">
 		<div id="quote_container_top">
-		   <h1><%= @quote.description %></h1>
+		   <blockquote><%= @quote.description %></blockquote>
 		</div>
 	
 		<div id="quote_container_bottom">
-			<div id="author_avatar">
-				<img src="https://lh5.googleusercontent.com/-TZEJ8uC5jmI/AAAAAAAAAAI/AAAAAAAAB-I/CYg0VkDy4IE/s48-c-k/photo.jpg">
-			</div>
 			<div id="author_name">
-				<h3> <%= @quote.author_name %> </h3>
+				<h1> @<%= @quote.author_name %> </h1>
 			</div>
 		</div>
 	</div>
