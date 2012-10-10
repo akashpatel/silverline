@@ -9,12 +9,12 @@
   <div class="transparentBox">
     <!--previous quote button-->
     <div id="quote_container_left">
-      <a href="#" class="previousIcon"></a>
+      <a href="<%=previous_quote_path(@quote.id)%>" class="previousIcon"></a>
     </div>
 
     <!--next quote button-->
     <div id="quote_container_right">
-      <a href="#" class="nextIcon"></a>
+      <a href="<%=next_quote_path(@quote.id)%>" class="nextIcon"></a>
     </div>
 
     <!--actual quote-->
