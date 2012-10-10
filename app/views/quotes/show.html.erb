@@ -1,20 +1,33 @@
 <div id="quote_wrapper">
 
-	<div id="quote_tags">
-		<% @quote.tag_list.each do |tag| %>
-			<p> #<%= tag %> </p>
-		<% end %>
-	</div>
+  <div id="quote_tags">
+    <% @quote.tag_list.each do |tag| %>
+        <p> #<%= tag %> </p>
+    <% end %>
+  </div>
 
-	<div class="transparentBox">
-		<div id="quote_container_top">
-		   <blockquote><%= @quote.description %></blockquote>
-		</div>
-	
-		<div id="quote_container_bottom">
-			<div id="author_name">
-				<h1> @<%= @quote.author_name %> </h1>
-			</div>
-		</div>
-	</div>
+  <div class="transparentBox">
+    <!--previous quote button-->
+    <div id="quote_container_left">
+      <a href="#" class="previousIcon"></a>
+    </div>
+
+    <!--next quote button-->
+    <div id="quote_container_right">
+      <a href="#" class="nextIcon"></a>
+    </div>
+
+    <!--actual quote-->
+    <div id="quote_container_top">
+      <blockquote><%= @quote.description %></blockquote>
+    </div>
+
+    <!--author name-->
+    <div id="quote_container_bottom">
+      <div id="author_name">
+        <h1> @<%= @quote.author_name %> </h1>
+      </div>
+    </div>
+
+  </div>
 </div>

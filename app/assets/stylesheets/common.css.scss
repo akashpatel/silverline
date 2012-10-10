@@ -3,8 +3,8 @@
 }
 
 .assetBox {
-	width: 272px;
-	height: 272px;
+	width: 242px;
+	height: 242px;
 	margin: 7px;
 	padding: 10px;
 	background: #D8D5D2;
@@ -20,7 +20,7 @@
 }
 
 .assetBoxTopDiv {
-	height: 220px;
+	height: 190px;
     margin: 0 0;
 	padding: 12px 15px 10px 5px;
     color: #2D333A;
@@ -55,4 +55,39 @@ blockquote {
 	margin:1.5em 10px;
 	padding:.5em 10px;
 	quotes:"\201C""\201D""\2018""\2019";
+}
+
+.previousIcon {
+  background-image: url("icons/prev.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  opacity: 0.15;
+  filter: alpha(opacity=40);
+  width: 50px;
+  height: 50px;
+  color: transparent;
+  float: left;
+  margin-top:250px;
+  margin-left: -10px;
+}
+
+.previousIcon:hover {
+  opacity: 0.4;
+}
+
+.nextIcon {
+  background-image: url("icons/next.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  opacity: 0.15;
+  filter: alpha(opacity=40);
+  width: 50px;
+  height: 50px;
+  color: transparent;
+  float: left;
+  margin-top: 250px;
+}
+
+.nextIcon:hover {
+  opacity: 0.4;
 }

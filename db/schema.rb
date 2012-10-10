@@ -63,10 +63,10 @@ ActiveRecord::Schema.define(:version => 20121003074831) do
   end
 
   create_table "user_dreams", :force => true do |t|
+    t.integer  "user_profile_id"
     t.string   "dream"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.integer  "user_profile_id"
   end
 
   create_table "user_profiles", :force => true do |t|

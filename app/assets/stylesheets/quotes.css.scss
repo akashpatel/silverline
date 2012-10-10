@@ -22,15 +22,28 @@
 	}
 }
 
+#quote_container_left {
+    float: left;
+    width: 40px;
+    height: inherit;
+    padding: 0px 10px 0px 10px;
+}
+
+#quote_container_right {
+  float: right;
+  width: 40px;
+  height: inherit;;
+  padding: 0px 10px 0px 10px;
+}
+
 #quote_container_top {
 	height: 375px;
-	width: inherit;
+	width: 855px;
+    float: left;
 	blockquote {
 		font-size: 45px;
 		line-height: 60px;
 		padding: 20px;
-		margin-left: 35px;
-		margin-right: 20px;
 		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
 		border-left: none;
 	}
@@ -38,6 +51,8 @@
 
 #quote_container_bottom {
 	height: 150px;
+    width: 855px;
+    float: right;
 }
 
 #author_name {
