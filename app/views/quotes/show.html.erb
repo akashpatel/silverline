@@ -1,5 +1,15 @@
-<div id="quote_wrapper">
+<% content_for :head do %>
+	<!--Facebook OG Meta Tags-->
+	<meta property="fb:app_id" 		content="490964707588512" /> 
+	<meta property="og:type"   		content="object" /> 
+    <meta property="og:url"    		content="http://www.viadreams.com/quotes/<%= @quote.id %>" /> 
+    <meta property="og:title"  		content="<%= @quote.description %>" /> 
+    <meta property="og:image"  		content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" />
+	<meta property="og:site_name" 	content="viadreams.com" />
+	<meta property="fb:admins" 		content="15100760" />
+<% end %>
 
+<div id="quote_wrapper">
   <div id="quote_tags">
     <% @quote.tag_list.each do |tag| %>
         <p> #<%= tag %> </p>
@@ -22,12 +32,14 @@
       <blockquote><%= @quote.description %></blockquote>
     </div>
 
-    <!--author name-->
+    <!--author name and social share-->
     <div id="quote_container_bottom">
       <div id="author_name">
         <h1> @<%= @quote.author_name %> </h1>
       </div>
+	  <div id="social_share">	
+		<fb:like send="false" href="http://www.viadreams.com/quotes/<%= @quote.id %>" layout="button_count" width="450" show_faces="true" colorscheme="light"></fb:like>
+	  </div>
     </div>
-
   </div>
 </div>

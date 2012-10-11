@@ -53,6 +53,16 @@
 	height: 150px;
     width: 855px;
     float: right;
+	#author_name {
+		height: 100px;
+	}
+	
+	#social_share {
+		height: 50px;
+		width: inherit;
+		float: left;
+		margin-left: 30px;
+	}
 }
 
 #author_name {
