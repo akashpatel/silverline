@@ -5,6 +5,7 @@ IkonBlvd::Application.routes.draw do
   
   match "silverline" => "home#login"
   match "index" => "home#index"
+  match "landing" => "home#landing"
   
   #devise
   match '/auth/:provider/callback' => 'authentications#create'
@@ -28,5 +29,5 @@ IkonBlvd::Application.routes.draw do
     end
   end
   
-  root :to => 'home#landing'
+  root :to => 'home#index'
 end
