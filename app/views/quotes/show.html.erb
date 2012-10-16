@@ -4,7 +4,7 @@
 	<meta property="og:type"   		content="website" />
     <meta property="og:url"    		content="http://www.viadreams.com/quotes/<%= @quote.id %>" /> 
     <meta property="og:title"  		content="<%= @quote.description %>" />
-    <meta property="og:description" content="@<%= @quote.author_name %>" />
+    <meta property="og:description" content="@<%= @quote.author.name %>" />
     <meta property="og:image"  		content="http://www.viadreams.com/assets/made_it_silhouette.png" />
 	<meta property="og:site_name" 	content="viadreams.com" />
 	<meta property="fb:admins" 		content="15100760" />
@@ -39,7 +39,7 @@
 		<fb:like send="false" href="http://www.viadreams.com/quotes/<%= @quote.id %>" layout="button_count" width="450" show_faces="false" colorscheme="light"></fb:like>
 	  </div>
       <div id="author_name">
-        <h1> @<%= @quote.author_name %> </h1>
+        <h1> @<%= @quote.author.name %> </h1>
       </div>
       <div id="author_pic_thumb_container">
         <a href="#">
