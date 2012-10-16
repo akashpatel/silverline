@@ -44,11 +44,7 @@
       <div id="author_pic_thumb_container">
         <a href="#">
           <div id="author_pic_thumb">
-            <% unless @quote.author.thumbnail(:thumb) == 'nil' %>
-                <%= image_tag @quote.author.thumbnail(:thumb) %>
-            <% else %>
-                <%= image_tag "child_silhouette_bw_filtered.png" %>
-            <% end %>
+            <%= image_tag @quote.author.thumbnail(:thumb) %>
           </div>
         </a>
       </div>

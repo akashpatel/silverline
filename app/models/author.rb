@@ -3,7 +3,7 @@ class Author < ActiveRecord::Base
 
   has_attached_file :thumbnail,
                     :styles => {
-                        :thumb => "115x115#"
+                        :thumb => "200x200#"
                     },
                     :storage => :s3,
                     :s3_credentials => {
@@ -12,5 +12,5 @@ class Author < ActiveRecord::Base
                         :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
                     },
                     :path => "authors/:style/:filename",
-                    :default_url => 'nil'
+                    :default_url => 'child_silhouette_bw_filtered.png'
 end
