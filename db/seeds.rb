@@ -39,6 +39,8 @@ authors = Author.create([
 quotes = Quote.all
 quotes.each do |q|
   author_of_this_quote = Author.find_by_name(q.author_name)
-  q.author_id = author_of_this_quote.id
-  q.save
+  unless author_of_this_quote.nil?
+    q.author_id = author_of_this_quote.id
+    q.save
+  end
 end
