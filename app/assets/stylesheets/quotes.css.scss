@@ -37,7 +37,7 @@
 }
 
 #quote_container_top {
-	height: 375px;
+	height: 450px;
 	width: 855px;
     float: left;
 	blockquote {
@@ -50,28 +50,28 @@
 }
 
 #quote_container_bottom {
-	height: 150px;
+	height: 75px;
     width: 855px;
     float: right;
-	#author_name {
-		height: 100px;
-	}
-	
-	#social_share {
-		height: 50px;
-		width: inherit;
-		float: left;
-		margin-left: 30px;
-	}
+    padding-top: 15px;
+}
+
+#social_share {
+  width: 370px;
+  height: 50px;
+  float: left;
+  padding: 10px 20px;
 }
 
 #author_name {
-	float: right;
-	margin-right: 120px;
-	h1 {
+	width: 310px;
+    float: left;
+    padding-right: 15px;
+    h1 {
 		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
-		font-size: 32px;
+		font-size: 25px;
 		color: #5D6B83;
+        float: right;
 	}
 }
 
@@ -84,3 +84,23 @@
 	color: #bbb;
 }
 
+#author_pic_thumb_container {
+  background: #979797;
+  -webkit-border-radius: 1px;
+  display: block;
+  padding-bottom: 2px;
+  float: left;
+  margin-top: -10px;
+}
+
+#author_pic_thumb {
+  background-color: white;
+  border: 1px solid #979797;
+  -webkit-border-radius: 3px;
+  height: 110px;
+  width: 110px;
+
+  img {
+    -webkit-border-radius: 1px;
+  }
+}

@@ -35,12 +35,19 @@
 
     <!--author name and social share-->
     <div id="quote_container_bottom">
+	  <div id="social_share">
+		<fb:like send="false" href="http://www.viadreams.com/quotes/<%= @quote.id %>" layout="button_count" width="450" show_faces="false" colorscheme="light"></fb:like>
+	  </div>
       <div id="author_name">
         <h1> @<%= @quote.author_name %> </h1>
       </div>
-	  <div id="social_share">	
-		<fb:like send="false" href="http://www.viadreams.com/quotes/<%= @quote.id %>" layout="button_count" width="450" show_faces="false" colorscheme="light"></fb:like>
-	  </div>
+      <div id="author_pic_thumb_container">
+        <a href="#">
+          <div id="author_pic_thumb">
+            <%= image_tag "child_silhouette_bw_filtered.png" %>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
