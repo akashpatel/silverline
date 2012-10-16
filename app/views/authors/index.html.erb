@@ -1,0 +1,7 @@
+<div class="form_well">
+  <% @authors.each do |a| %>
+      <ul>
+        <li><%= link_to(a.name, edit_author_path(a)) %></li>
+      </ul>
+  <% end %>
+</div>
