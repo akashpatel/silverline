@@ -22,6 +22,7 @@ IkonBlvd::Application.routes.draw do
       get 'next'
     end
   end
+  resources :authors, :only => [:create, :new]
   
   resources :user_assets, :only => :new do
     collection do

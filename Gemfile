@@ -6,7 +6,8 @@ gem 'koala' # 1.0
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'jquery-rails'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip", "~> 3.0"
+gem 'aws-sdk', '~> 1.3.4'
 gem 'newrelic_rpm'
 gem 'acts-as-taggable-on', '~> 2.3.1'
 

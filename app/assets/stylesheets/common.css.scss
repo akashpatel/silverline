@@ -91,3 +91,14 @@ blockquote {
 .nextIcon:hover {
   opacity: 0.4;
 }
+
+.form_well {
+  width: 380px;
+  height: 100%;
+  margin: auto auto;
+  border: 1px solid #383737;
+  padding: 15px 15px 0px 15px;
+  h2, h3 {
+    padding-bottom: 15px;
+  }
+}

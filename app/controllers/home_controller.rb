@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     # @user_assets = UserAsset.find(:all)
     # @user_dreams = UserDream.find(:all)
     @quotes = Quote.all
-    
+
   end
   
   def health_check

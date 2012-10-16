@@ -1,0 +1,9 @@
+<div class="form_well">
+  <h2>Add a new author</h2>
+  <%= form_for :author, :url => authors_path, :html => {:multipart => true} do |f| %>
+      <%= f.text_field :name, :placeholder => "Author name", :class => "span5" %>
+      <%= f.text_field :slug, :placeholder => "Author slug", :class => "span5" %>
+      <%= f.file_field :thumbnail, :class => "span5" %>
+      <%= f.submit :class => "btn btn-info", :value => "Create It" %>
+  <% end %>
+</div>
