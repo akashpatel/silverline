@@ -5,7 +5,7 @@
     <meta property="og:url"    		content="http://www.viadreams.com/quotes/<%= @quote.id %>" /> 
     <meta property="og:title"  		content="<%= @quote.description %>" />
     <meta property="og:description" content="@<%= @quote.author.name %>" />
-    <meta property="og:image"  		content="http://www.viadreams.com/assets/made_it_silhouette.png" />
+    <meta property="og:image"  		content="<%= @quote.author.thumbnail(:thumb) %>" />
 	<meta property="og:site_name" 	content="viadreams.com" />
 	<meta property="fb:admins" 		content="15100760" />
 <% end %>
