@@ -12,5 +12,5 @@ class Author < ActiveRecord::Base
                         :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
                     },
                     :path => "authors/:style/:filename",
-                    :default_url => 'http://viadreams.com/assets/made_it_silhouette_bw.png'
+                    :default_url => 'http://www.viadreams.com/assets/made_it_silhouette_bw.png'
 end
