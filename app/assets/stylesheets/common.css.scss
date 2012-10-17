@@ -25,11 +25,11 @@
 	padding: 12px 15px 10px 5px;
     color: #C5C5C5;
 	border-bottom: 1px solid grey;
-	font-size: 20px;
-    font-family: '"MuseoSlab",georgia,"dejavu serif",serif';
+	font-family: '"MuseoSlab",georgia,"dejavu serif",serif';
     blockquote {
+      font-size: 18px;
       border-left: 3px solid grey;
-      text-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(54, 54, 54, 0.32);
+      text-shadow:0 3px 0 rgba(46, 46, 46, 0.55), 0 0 30px rgba(0, 0, 0, 0.78);
     }
 }
 
@@ -39,11 +39,11 @@
 	padding: 5px;
 	p {
 		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
-        text-shadow: 0 3px 0 #161616, 0 0 30px rgba(0, 0, 0, 0.78);
-		font-size: 19px;
+        text-shadow: 0 3px 0 rgba(46, 46, 46, 0.55), 0 0 30px rgba(0, 0, 0, 0.78);
+		font-size: 17px;
 		float: right;
         margin-right: 20px;
-		color: #9C9C9C;
+		color: #CECECE;
 	}
 }
 
