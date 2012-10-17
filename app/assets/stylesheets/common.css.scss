@@ -7,7 +7,7 @@
 	height: 242px;
 	margin: 7px;
 	padding: 10px;
-	background: rgba(0, 0, 0, 0.47);
+	background: rgba(0, 0, 0, 0.67);
 	line-height: 1.5em;
 	float: left;
 	/*-webkit-border-radius: 7px;*/
@@ -23,13 +23,13 @@
 	height: 190px;
     margin: 0 0;
 	padding: 12px 15px 10px 5px;
-    color: #C5C5C5;
+    color: #B3B3B3;
 	border-bottom: 1px solid grey;
 	font-family: '"MuseoSlab",georgia,"dejavu serif",serif';
     blockquote {
-      font-size: 18px;
+      font-size: 19px;
       border-left: 3px solid grey;
-      text-shadow:0 3px 0 rgba(46, 46, 46, 0.55), 0 0 30px rgba(0, 0, 0, 0.78);
+      text-shadow: 0 3px 0 rgba(46, 46, 46, 0.55), 0 0 30px rgba(0, 0, 0, 0.78);
     }
 }
 
@@ -43,7 +43,7 @@
 		font-size: 17px;
 		float: right;
         margin-right: 20px;
-		color: #CECECE;
+		color: grey;
 	}
 }
 
