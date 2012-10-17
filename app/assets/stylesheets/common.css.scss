@@ -7,7 +7,7 @@
 	height: 242px;
 	margin: 7px;
 	padding: 10px;
-	background: #D8D5D2;
+	background: rgba(0, 0, 0, 0.47);
 	line-height: 1.5em;
 	float: left;
 	/*-webkit-border-radius: 7px;*/
@@ -23,9 +23,14 @@
 	height: 190px;
     margin: 0 0;
 	padding: 12px 15px 10px 5px;
-    color: #2D333A;
+    color: #C5C5C5;
 	border-bottom: 1px solid grey;
-	font-size: 18px;
+	font-size: 20px;
+    font-family: '"MuseoSlab",georgia,"dejavu serif",serif';
+    blockquote {
+      border-left: 3px solid grey;
+      text-shadow: 0 3px 0 rgba(0, 0, 0, 0.3), 0 0 30px rgba(54, 54, 54, 0.32);
+    }
 }
 
 .assetBoxBottomDiv {
@@ -33,10 +38,12 @@
 	height: 28px;
 	padding: 5px;
 	p {
-		font-family: bank_gothic;
-		font-size: 20px;
-		float: left;
-		color: #187BAA;
+		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+        text-shadow: 0 3px 0 #161616, 0 0 30px rgba(0, 0, 0, 0.78);
+		font-size: 19px;
+		float: right;
+        margin-right: 20px;
+		color: #929292;
 	}
 }
 
@@ -48,7 +55,7 @@
 }
 
 blockquote {
-	font-size: 19px;
+	font-size: 20px;
 	line-height: 25px;
 	background:transparent;
 	border-left:1px solid #535353;

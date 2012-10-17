@@ -10,9 +10,9 @@
 
 #quote_tags {
 	height: 40px;
-	color: #728510;
+	color: #242424;
 	padding: 20px 10px 10px 3px;
-	text-shadow: 0 3px 0 black, 0 0 30px #090808;
+	text-shadow: 0 3px 0 #A0A0A0, 0 0 30px #999;
 	font-weight: 500;
 	p {
 		font-size: 32px;
@@ -45,6 +45,7 @@
 		line-height: 60px;
 		padding: 20px;
 		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+        text-shadow: 0 3px 0 black, 0 0 30px rgba(54, 54, 54, 0.32);
 		border-left: none;
 	}
 }
@@ -69,8 +70,9 @@
     padding-right: 15px;
     h1 {
 		font-family: "MuseoSlab",georgia,"dejavu serif",serif;
+        text-shadow: 0 3px 0 black, 0 0 30px black;
 		font-size: 25px;
-		color: #8A8A8A;
+		color: #929292;
         float: right;
 	}
 }
@@ -78,10 +80,10 @@
 .transparentBox {
 	width: inherit;
 	height: inherit;
-	background-color: rgba(0, 0, 0, 0.32);
+	background-color: rgba(0, 0, 0, 0.65);
 	margin-left: auto;
 	margin-right: auto;
-	color: #bbb;
+	color: #A0A0A0;
 }
 
 #author_pic_thumb_container {
