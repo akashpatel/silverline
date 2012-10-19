@@ -9,6 +9,7 @@
 
 #taglist {
   width: 185px;
+  height: 400px;
   float: left;
   font-size: 11px;
   font-family: "MuseoSlab",georgia,"dejavu serif",serif;
@@ -17,6 +18,7 @@
   text-transform: uppercase;
   position: fixed;
   text-rendering: optimizeLegibility;
+  overflow-y: auto;
 
   ul, li {
     list-style-type: none;
