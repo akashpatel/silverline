@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   def index
     # @user_assets = UserAsset.find(:all)
     # @user_dreams = UserDream.find(:all)
-    @quotes = Quote.order("created_at DESC").all
+    @quotes = Quote.by_date.all
     @tags = Tag.order("name ASC").all
 
   end

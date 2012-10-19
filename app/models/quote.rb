@@ -7,5 +7,6 @@ class Quote < ActiveRecord::Base
 
   scope :previous, lambda { |p| {:conditions => ["id < ?", p.id], :limit => 1, :order => "id DESC"} }
   scope :next, lambda { |p| {:conditions => ["id > ?", p.id], :limit => 1, :order => "id"} }
+  scope :by_date, order("created_at DESC")
   
 end

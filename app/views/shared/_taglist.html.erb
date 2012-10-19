@@ -1,7 +1,7 @@
 <div id="taglist">
     <% tags.each do |t| %>
         <ul>
-            <li><%= link_to "##{t.name}", "#" %></li>
+            <li><%= link_to "##{t.name}", tagged_quotes_path(t.name.downcase) %></li>
         </ul>
     <% end %>
 </div>
