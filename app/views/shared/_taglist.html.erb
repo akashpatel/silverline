@@ -1,0 +1,7 @@
+<div id="taglist">
+    <% tags.each do |t| %>
+        <ul>
+            <li><%= link_to "##{t.name}", "#" %></li>
+        </ul>
+    <% end %>
+</div>

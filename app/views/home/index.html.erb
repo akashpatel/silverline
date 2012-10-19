@@ -9,8 +9,9 @@
 	});
 <% end %>
 
+<%= render :partial => 'shared/taglist', :locals => {:tags => @tags} %>
 
-<div id="user_assets_container" class="center">
+<div id="qutoes_index_container" class="span11">
 	<% @quotes.each do |quote|%>
 		<div class="assetBox shadow">
 			<a href="<%= quote_path(quote) %>">
