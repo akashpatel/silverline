@@ -23,7 +23,7 @@ IkonBlvd::Application.routes.draw do
   resources :authentications
   resources :user_dreams, :only => :create
 
-  match 'quote/:id' => redirect('/q/%{id}') #legacy redirect
+  match 'quotes/:id' => redirect('/q/%{id}') #legacy redirect
   resources :quotes, :only => [:create, :show], :path => "q" do
     member do
       get 'previous'
