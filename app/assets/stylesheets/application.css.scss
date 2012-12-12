@@ -34,3 +34,14 @@
 .clearfix {
 	zoom: 1;
 }
+
+.brand {
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto !important;
+  padding: 2px !important;
+  img {
+    height: 45px;
+  }
+}

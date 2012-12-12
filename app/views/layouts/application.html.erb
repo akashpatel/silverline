@@ -25,7 +25,9 @@
 		<div class="navbar navbar-fixed-top">
 		    <div class="navbar-inner">
 		      <div class="container">
-		        <a class="brand" href="/index">viadreams</a>
+                <div class="brand">
+		            <a href="/index"> <%= image_tag "viadreams_stamp_logo.png" %></a>
+                </div>
 		        <div class="container nav-collapse">
 		          	<ul class="nav pull-right">
 						<% if user_signed_in? %>
