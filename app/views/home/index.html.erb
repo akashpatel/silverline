@@ -4,24 +4,36 @@
 		$userAssetsContainer.masonry({
 			itemSelector: '.assetBox',
 			isAnimated: true,
-			isFitWidth: true
+			isFitWidth: true,
+			columnWidth: 0,
 		});
 	});
 <% end %>
 
 <%= render :partial => 'shared/taglist', :locals => {:tags => @tags} %>
-
-<div id="qutoes_index_container" class="span11">
-	<% @quotes.each do |quote|%>
-		<div class="assetBox shadow">
-			<a href="<%= quote_path(quote) %>">
-				<div class="assetBoxTopDiv">
-					<blockquote><%= quote.description %></blockquote>
-				</div>
-			</a>
-			<div class="assetBoxBottomDiv">
-				<p>@<%= quote.author.name unless quote.author.nil? %></p>
-			</div>
+<div id="qutoes_index_container">
+	<!-- <div id="featured_quote">
+		<div class="transparentBox shadow">
+			<blockquote>Life is short. Do what you love...</blockquote>
+			<blockquote></blockquote>
 		</div>
-	<% end %>
+	</div> -->
+
+	<!--quotes container-->
+	<div id="user_assets_container">
+		<% 10.times do %>
+		<% @quotes.each do |quote|%>
+			<div class="assetBox shadow">
+				<a href="<%= quote_path(quote) %>">
+					<div class="assetBoxTopDiv">
+						<blockquote><%= quote.description %></blockquote>
+					</div>
+				</a>
+				<div class="assetBoxBottomDiv">
+					<p>@<%= quote.author.name unless quote.author.nil? %></p>
+				</div>
+			</div>
+		<% end %>
+		<% end %>
+	</div>
 </div>

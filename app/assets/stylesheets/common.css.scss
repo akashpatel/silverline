@@ -5,7 +5,6 @@
 .assetBox {
 	width: 242px;
 	height: 242px;
-	margin: 7px;
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.67);
 	line-height: 1.5em;
@@ -20,10 +19,9 @@
 }
 
 .assetBoxTopDiv {
-	height: 190px;
-    margin: 0 0;
+	height: 190px;             
 	padding: 12px 15px 10px 5px;
-    color: #B3B3B3;
+  color: #fff;
 	border-bottom: 1px solid grey;
 	font-family: '"MuseoSlab",georgia,"dejavu serif",serif';
     blockquote {

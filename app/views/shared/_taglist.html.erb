@@ -1,7 +1,9 @@
-<div id="taglist">
+<div id="taglist" class="transparentBox shadow">
     <% tags.each do |t| %>
-        <ul>
-            <li><%= link_to "##{t.name}", tagged_quotes_path(t.name.downcase) %></li>
-        </ul>
+        <%= content_tag(:ul) do %>
+        	<%= content_tag(:li, :class => "tag#{[1,2,3,4].sample}") do %>
+            	<%= link_to "##{t.name}", tagged_quotes_path(t.name.downcase) %>
+            <% end %>
+        <% end %>
     <% end %>
 </div>

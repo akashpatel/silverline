@@ -15,7 +15,7 @@
 #header {
 	height: 45px;
 	width: 100%;
-	min-width: 981px;
+	min-width: 786px;
 	border-bottom: 1px solid;
 }
 
@@ -27,8 +27,11 @@
 }
 
 #content {
-	margin: 70px auto;
-	width: 1045px;
+	margin: 65px auto;
+	min-width: 262px;
+	max-width: 786px;
+	width: 65%;	
+	height: 100%;
 }
 
 .clearfix {
