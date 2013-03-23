@@ -21,7 +21,6 @@
 
 	<!--quotes container-->
 	<div id="user_assets_container">
-		<% 10.times do %>
 		<% @quotes.each do |quote|%>
 			<div class="assetBox shadow">
 				<a href="<%= quote_path(quote) %>">
@@ -33,7 +32,6 @@
 					<p>@<%= quote.author.name unless quote.author.nil? %></p>
 				</div>
 			</div>
-		<% end %>
 		<% end %>
 	</div>
 </div>
